@@ -2,6 +2,9 @@
 
 > ### Can you predict a global "mega hit" using only audio fingerprint and anticipate a track's success pre-release?
 
+![Heatmap of Cluster vs Features](visuals/clusters_features_heatmap.png)
+![Distribution of Cluster vs Music Mode](visuals/mode_vs_cluster.png)
+
 ### Summary
 This project explores the relationship between a song's **sonic DNA** and its **market performance**. By analyzing the [Spotify 2023 Top Tracks data](https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023), I moved beyond simple stream volume to uncovering the types of music that build traction/emotional connection (and hence user retention) vs those that rely on editorial assistance.
 
@@ -62,7 +65,7 @@ I also used **euclidean distance to centroids** to compute and identify the top 
 
 <br>
 
-**Phase 3: Success Modeling $\rarr$ Streams-to-Playlist Efficiency**    
+**Phase 3: Success Modeling → Streams-to-Playlist Efficiency**    
 **Initial Modeling:**
 - In the final phase, I tested whether a song's "sonic fingerprint" could predict its status as a "mega hit" (defined as top 10% of top streams).
 - Using an "audio features only" model, the decision tree struggled, with an $\text{F1 score}$ of only 0.20, suggesting that no specific musical style ("sonic fingerprint") is guaranteed to top the charts.
