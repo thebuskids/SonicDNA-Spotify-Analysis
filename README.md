@@ -42,13 +42,13 @@ I observed that using raw music data, that could have long tails / extreme value
 - **Dimensionality Reduction (PCA)**: Used PCA with `full` SVD solver to capture 85% of variance across 6 principal components, thus reducing noise.
 - **Feature Engineering**: Applied `log1p` transformation to `instrumentalness_%` and clipped scaled features to $[-3, 3]$ to prevent extreme values from dramatically impacting the clusters.
 - **Validation**: Used the `KneeLocator` (elbow method) to determine an optimal number of clusters ($K=4$), resulting in more balanced and interpretable groups.
-<table>
-    <th><tr><td>Cluster</td><td>Persona</td><td>Primary Signal</td></tr></th>
-    <tr><td>0</td><td>Pulsating / High-Octane</td><td>High BPM, High Liveness</td></tr>
-    <tr><td>1</td><td>Feel-Good Anthems / Party-Starters</td><td>High Valence, High Energy, High Danceability</td></tr>
-    <tr><td>2</td><td>Rhythmic Lyricists</td><td>High Speechiness</td></tr>
-    <tr><td>3</td><td>Chill Melodies / Reflective Ballads</td><td>High Acoustic, Low Energy</td></tr>
-</table>
+
+| Cluster | Persona | Primary Signal |
+| :--- | :--- | :--- |
+| 0 | Pulsating / High-Octane | High BPM, High Liveness |
+| 1 | Feel-Good Anthems / Party-Starters | High Valence, High Energy, High Danceability |
+| 2 | Rhythmic Lyricists | High Speechiness |
+| 3 | Chill Melodies / Reflective Ballads | High Acoustic, Low Energy |
 
 <br>
 
